@@ -25,9 +25,9 @@ namespace PrismWPF
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             // 返回一些依赖注入
-            containerRegistry.RegisterForNavigation<ViewA>();
-            containerRegistry.RegisterForNavigation<ViewB>();
-            containerRegistry.RegisterForNavigation<ViewC>();
+            containerRegistry.RegisterForNavigation<RoleView>();
+            containerRegistry.RegisterForNavigation<SkillView>();
+            containerRegistry.RegisterForNavigation<TaskView>();
         }
     }
 }

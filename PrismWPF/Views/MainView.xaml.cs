@@ -27,7 +27,7 @@ namespace PrismWPF.Views
         {
             InitializeComponent();
             InitWindow();
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(ViewA));
+            regionManager.RegisterViewWithRegion("ContentRegion", typeof(RoleView));
         }
 
         private void MoveWindow(object sender, MouseButtonEventArgs e)

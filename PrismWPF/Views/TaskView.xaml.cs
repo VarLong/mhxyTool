@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace PrismWPF.Views
 {
     /// <summary>
-    /// ViewA.xaml 的交互逻辑
+    /// ViewC.xaml 的交互逻辑
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class TaskView : UserControl
     {
-        public ViewA()
+        public TaskView()
         {
             InitializeComponent();
         }

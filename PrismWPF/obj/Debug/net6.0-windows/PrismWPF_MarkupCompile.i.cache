@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\mhxyTool\PrismWPF\App.xaml
-4-214011889
+5-1776892737
 
-10-1270749082
+101374863186
 2012055976878
-Views\MainView.xaml;Views\ViewA.xaml;Views\ViewB.xaml;Views\ViewC.xaml;
+Resource\MhxyResource.xaml;Views\MainView.xaml;Views\RoleView.xaml;Views\SkillView.xaml;Views\TaskView.xaml;
 
 False
 

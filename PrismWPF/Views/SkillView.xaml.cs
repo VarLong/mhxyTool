@@ -18,9 +18,9 @@ namespace PrismWPF.Views
     /// <summary>
     /// ViewB.xaml 的交互逻辑
     /// </summary>
-    public partial class ViewB : UserControl
+    public partial class SkillView : UserControl
     {
-        public ViewB()
+        public SkillView()
         {
             InitializeComponent();
         }

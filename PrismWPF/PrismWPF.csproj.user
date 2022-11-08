@@ -7,27 +7,30 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\ViewA.xaml.cs">
+    <Compile Update="Views\RoleView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ViewB.xaml.cs">
+    <Compile Update="Views\SkillView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ViewC.xaml.cs">
+    <Compile Update="Views\TaskView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Resource\MhxyResource.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\MainView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\ViewA.xaml">
+    <Page Update="Views\RoleView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\ViewB.xaml">
+    <Page Update="Views\SkillView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\ViewC.xaml">
+    <Page Update="Views\TaskView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

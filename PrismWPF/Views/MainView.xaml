@@ -10,7 +10,7 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         AllowsTransparency="True"
-        Height="450" Width="800" 
+        Height="580" Width="940" 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -31,11 +31,11 @@
                     <Button
                                 x:Name="btnMin"
                                 Content="—"
-                                Style="{StaticResource MaterialDesignFlatMidBgButton}" Cursor="Hand" />
+                                Style="{StaticResource MaterialDesignFlatMidBgButton}" />
                     <Button
                                 x:Name="btnClose"
                                 Content="✕"
-                                Style="{StaticResource MaterialDesignFlatMidBgButton}" Cursor="Hand" />
+                                Style="{StaticResource MaterialDesignFlatMidBgButton}"/>
                 </StackPanel>
                 <StackPanel DockPanel.Dock="Left" Orientation="Horizontal" Background="Transparent" >
                     <Image
@@ -48,25 +48,24 @@
                 </StackPanel>
             </DockPanel>
         </materialDesign:ColorZone>
-
         <StackPanel Orientation="Horizontal">
             <RadioButton 
-                Content="FIRST"
+                Content="人物"
                 IsChecked="True"
-                Command="{Binding OpenCommand}" CommandParameter="ViewA"
-                Style="{StaticResource MaterialDesignTabRadioButton}" />
+                Command="{Binding OpenCommand}" CommandParameter="RoleView"
+                Style="{StaticResource MyTabRadioButton}" />
             <RadioButton
-                Content="SECOND"
+                Content="技能"
                 IsChecked="False"
-                Command="{Binding OpenCommand}" CommandParameter="ViewB"
-                Style="{StaticResource MaterialDesignTabRadioButton}" />
+                Command="{Binding OpenCommand}" CommandParameter="SkillView"
+                Style="{StaticResource MyTabRadioButton}" />
             <RadioButton
-                Content="THIRD"
+                Content="任务"
                 IsChecked="False"
-                Command="{Binding OpenCommand}" CommandParameter="ViewC"
-                Style="{StaticResource MaterialDesignTabRadioButton}" />
+                Command="{Binding OpenCommand}" CommandParameter="TaskView"
+                Style="{StaticResource MyTabRadioButton }" />
         </StackPanel>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" HorizontalAlignment="Stretch" Height="386" Background="Blue">
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" HorizontalAlignment="Stretch"  Background="Blue" Height="523">
         </ContentControl>
 
     </StackPanel>
