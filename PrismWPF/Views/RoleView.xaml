@@ -4,19 +4,69 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PrismWPF.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300*"/>
-            <ColumnDefinition Width="100*"/>
-        </Grid.ColumnDefinitions>
+    <DockPanel>
+        <smtx:XamlDisplay UniqueKey="drawers_1">
+            <materialDesign:DrawerHost x:Name="DrawerHost" OpenMode="Modal"
+                                 Width="800"
+                                 Height="450"
+                                 HorizontalAlignment="Center"
+                                 VerticalAlignment="Top"
+                                 BorderBrush="{DynamicResource MaterialDesignDivider}"
+                                 BorderThickness="2"
+                                 BottomDrawerBackground="{DynamicResource SecondaryHueLightBrush}">
+            <materialDesign:DrawerHost.LeftDrawerContent>
+                <StackPanel>
+                    <TextBlock Margin="4"
+                       HorizontalAlignment="Center"
+                       Text="LEFT FIELD" />
 
-        <StackPanel Grid.Column="0" Background="Gray">
-            <Grid Height="80" Width="600" Background="GreenYellow"/>
-            <Grid Height="80" Width="600" Background="Gold"/>
-            <Grid Height="80" Width="600" Background="Beige"/>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Background="Yellow"></StackPanel>
-    </Grid>
+                    <Button Margin="4"
+                    HorizontalAlignment="Center"
+                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                    CommandParameter="{x:Static Dock.Left}"
+                    Content="CLOSE THIS"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+
+                    <Button Margin="4"
+                    HorizontalAlignment="Center"
+                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                    Content="CLOSE ALL"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+                </StackPanel>
+            </materialDesign:DrawerHost.LeftDrawerContent>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300*"/>
+                        <ColumnDefinition Width="100*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Background="Gray">
+                        <Grid Height="80" Width="600" Background="White">
+                            <Button Content="Button" HorizontalAlignment="Left" Margin="181,45,0,0" VerticalAlignment="Top"/>
+                            <ComboBox Width="48" Height="24">
+                                <ComboBoxItem Content="iOS" />
+                            </ComboBox>
+                            <Button Width="48" Height="20"
+                  Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                  CommandParameter="{x:Static Dock.Left}"
+                  Content="{materialDesign:PackIcon Kind=ArrowLeft}" Margin="181,10,371,50" />
+                            <Button Width="48" Height="20"
+                  Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                  CommandParameter="{x:Static Dock.Left}"
+                  Content="{materialDesign:PackIcon Kind=ArrowLeft}" Margin="105,10,447,50" RenderTransformOrigin="-0.825,0.485" />
+                        </Grid>
+                        <Grid Height="80" Width="600" Background="Gold">
+   
+                        </Grid>
+                        <Grid Height="80" Width="600" Background="Beige"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Background="Yellow"></StackPanel>
+                </Grid>
+            </materialDesign:DrawerHost>
+        </smtx:XamlDisplay>
+    </DockPanel>
 </UserControl>

@@ -39,8 +39,11 @@
                     Content="THIRD"
                     IsChecked="False"
                     Style="{StaticResource MaterialDesignTabRadioButtonRight}" />
+                
             </StackPanel>
             <TextBox Grid.Column="1" Background="Blue"/>
+            
+            
         </Grid>
     </StackPanel>
 
