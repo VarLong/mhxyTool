@@ -1,5 +1,6 @@
 ﻿using Prism.DryIoc;
 using Prism.Ioc;
+using Prism.Modularity;
 using PrismWPF.Views;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using WebModule;
 
 namespace PrismWPF
 {
@@ -28,6 +30,13 @@ namespace PrismWPF
             containerRegistry.RegisterForNavigation<RoleView>();
             containerRegistry.RegisterForNavigation<SkillView>();
             containerRegistry.RegisterForNavigation<TaskView>();
+        }
+
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<WebModuleProfile>();
+            base.ConfigureModuleCatalog(moduleCatalog);
         }
     }
 }

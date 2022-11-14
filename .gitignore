@@ -1,3 +1,8 @@
 PrismWPF/bin/*
 PrismWPF/.vs/*
 PrismWPF/obj/*
+ExtWindow/*
+WebModule/bin/*
+WebModule/.vs/*
+WebModule/obj/*
+.vs/*

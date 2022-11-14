@@ -48,7 +48,9 @@
         <StackPanel Grid.Column="1" Background="Beige">
             <TextBlock>变身卡管理</TextBlock>
         </StackPanel>
-        <StackPanel Grid.Row="1" Background="BlanchedAlmond"></StackPanel>
+        <StackPanel Grid.Row="1" Background="BlanchedAlmond">
+ 
+        </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" Background="#FFF1B3F5">
             <TreeView
   MinWidth="220">
@@ -167,6 +169,10 @@
     Header="Empty" />
             </TreeView>
         </StackPanel>
-        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Background="Aqua"></StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Background="Aqua">
+            <Slider Width="120" x:Name="slider1" Value="0" Minimum="0" Maximum="1"/>
+            <Button Content="Button" Opacity="{Binding Path=Value, ElementName=slider1}">
+            </Button>
+        </StackPanel>
     </Grid>
 </UserControl>

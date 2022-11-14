@@ -39,11 +39,12 @@
                     Content="THIRD"
                     IsChecked="False"
                     Style="{StaticResource MaterialDesignTabRadioButtonRight}" />
-                
+
             </StackPanel>
-            <TextBox Grid.Column="1" Background="Blue"/>
-            
-            
+            <Grid  Grid.Column="1" Background="Gray">
+                <Button Content="OpenNewWindow" Height="24" Margin="266,31,311,41" />
+            </Grid>
+
         </Grid>
     </StackPanel>
 

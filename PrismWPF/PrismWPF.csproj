@@ -19,6 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebModule\WebModule.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Images\login.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
