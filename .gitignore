@@ -1,3 +1,4 @@
-/PrismWPF/bin/
-/PrismWPF/.vs/
-/PrismWPF/obj/
+PrismWPF/bin/*
+PrismWPF/.vs/*
+PrismWPF/obj/*
+PrismWPF/App.xaml
