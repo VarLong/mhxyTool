@@ -38,7 +38,6 @@
                     </StackPanel>
                 </Expander>
                 <Border Style="{StaticResource VerticalDividerBorder}" />
-
                 <TextBox
                 VerticalAlignment="Center"
                 materialDesign:HintAssist.Hint="Floating Hint"
@@ -47,9 +46,56 @@
         </StackPanel>
         <StackPanel Grid.Column="1" Background="Beige">
             <TextBlock>变身卡管理</TextBlock>
+            <TextBlock Text="修炼计算" Height="20"/>
+            <TextBlock Text="师门技能计算" Height="20"/>
+            <TextBlock Text="辅助技能计算" Height="20"/>
+            <TextBlock Text="剧情技能计算" Height="20"/>
+            <TextBlock Text="装备特技" Height="20"/>
+            <Button>
+                <Hyperlink Click="Hyperlink_Click" NavigateUri="https://xyq.163.com/tools/">梦幻西游工具箱</Hyperlink>
+            </Button>
         </StackPanel>
         <StackPanel Grid.Row="1" Background="BlanchedAlmond">
- 
+            <materialDesign:Flipper
+  materialDesign:FlipperAssist.UniformCornerRadius="8"
+  IsFlippedChanged="Flipper_OnIsFlippedChanged"
+  Style="{StaticResource MaterialDesignCardFlipper}">
+                <materialDesign:Flipper.FrontContent>
+                    <Button
+      Width="184"
+      Margin="8"
+      Command="{x:Static materialDesign:Flipper.FlipCommand}"
+      Content="Rounded Card Flipper 1"
+      Style="{StaticResource MaterialDesignFlatButton}" />
+                </materialDesign:Flipper.FrontContent>
+                <materialDesign:Flipper.BackContent>
+                    <Button
+      Width="184"
+      Margin="8"
+      Command="{x:Static materialDesign:Flipper.FlipCommand}"
+      Content="GO BACK"
+      Style="{StaticResource MaterialDesignFlatButton}" />
+                </materialDesign:Flipper.BackContent>
+            </materialDesign:Flipper>
+            <materialDesign:Card>
+                <TabControl
+    Width="300"
+    materialDesign:ColorZoneAssist.Mode="SecondaryLight"
+    Style="{StaticResource MaterialDesignFilledTabControl}">
+                    <TabItem
+      Header="TAB 1">
+                        <TextBlock
+        Margin="8"
+        Text="SecondaryLight Tab 1" />
+                    </TabItem>
+                    <TabItem
+      Header="TAB 2">
+                        <TextBlock
+        Margin="8"
+        Text="SecondaryLight Tab 2" />
+                    </TabItem>
+                </TabControl>
+            </materialDesign:Card>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" Background="#FFF1B3F5">
             <TreeView
@@ -170,9 +216,8 @@
             </TreeView>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Background="Aqua">
-            <Slider Width="120" x:Name="slider1" Value="0" Minimum="0" Maximum="1"/>
-            <Button Content="Button" Opacity="{Binding Path=Value, ElementName=slider1}">
-            </Button>
+            <Slider Width="120" x:Name="slider1" Value="1" Minimum="0" Maximum="1"/>
+            <Button Content="Button" Opacity="{Binding Value, ElementName=slider1}"/>
         </StackPanel>
     </Grid>
 </UserControl>

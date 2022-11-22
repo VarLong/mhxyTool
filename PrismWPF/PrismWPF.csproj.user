@@ -16,6 +16,18 @@
     <Compile Update="Views\TaskView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\TaskView\TaskViewContent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TaskView\TaskViewContentTypeA.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TaskView\TaskWebViewMin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TaskView\TaskWebViewMinA.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Resource\MhxyResource.xaml">
@@ -31,6 +43,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\TaskView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TaskView\TaskViewContent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TaskView\TaskViewContentTypeA.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TaskView\TaskWebViewMin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TaskView\TaskWebViewMinA.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

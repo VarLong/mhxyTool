@@ -1,8 +1,5 @@
-﻿using DryIoc;
-using Prism.Commands;
-using Prism.Mvvm;
+﻿using Prism.Commands;
 using Prism.Regions;
-using PrismWPF.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,15 +18,13 @@ using System.Windows.Shapes;
 namespace PrismWPF.Views
 {
     /// <summary>
-    /// ViewC.xaml 的交互逻辑
+    /// TaskViewContent.xaml 的交互逻辑
     /// </summary>
-    public partial class TaskView : UserControl
+    public partial class TaskViewContent : UserControl
     {
-        public TaskView()
+        public TaskViewContent(IRegionManager regionManager)
         {
             InitializeComponent();
-
         }
-
     }
 }

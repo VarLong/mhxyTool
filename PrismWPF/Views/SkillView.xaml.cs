@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +26,23 @@ namespace PrismWPF.Views
         {
             InitializeComponent();
         }
+
+        private void Flipper_OnIsFlippedChanged(object sender, RoutedPropertyChangedEventArgs<bool> e)
+    => System.Diagnostics.Debug.WriteLine($"Card is flipped = {e.NewValue}");
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            RegistryKey key = Registry.ClassesRoot.OpenSubKey(@"http\shell\open\command\");
+            string s = key.GetValue("").ToString();
+            string ekey = s.Substring(2, s.Length - 4);
+
+            //Hyperlink link = sender as Hyperlink;
+            //Process.Start(s, link.NavigateUri.ToString());
+            //Process.Start("edge.exe", "https://xyq.163.com/tools/");
+
+        
+        }
     }
+
+
 }

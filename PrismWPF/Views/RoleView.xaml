@@ -46,7 +46,9 @@
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0" Background="Gray">
                         <Grid Height="80" Width="600" Background="White">
-                            <Button Content="Button" HorizontalAlignment="Left" Margin="181,45,0,0" VerticalAlignment="Top"/>
+                            <Button Content="根据等级常规计算" HorizontalAlignment="Left" Margin="40,45,0,0" VerticalAlignment="Top" Background="#FFD49393"/>
+                            <Button Content="等级->经验" HorizontalAlignment="Left" Margin="181,45,0,0" VerticalAlignment="Top" Background="#FFD49393"/>
+                            
                             <ComboBox Width="48" Height="24">
                                 <ComboBoxItem Content="iOS" />
                             </ComboBox>
@@ -60,9 +62,14 @@
                   Content="{materialDesign:PackIcon Kind=ArrowLeft}" Margin="105,10,447,50" RenderTransformOrigin="-0.825,0.485" />
                         </Grid>
                         <Grid Height="80" Width="600" Background="Gold">
-   
+                            <Button Content="经验->等级" HorizontalAlignment="Left" Margin="181,45,0,0" VerticalAlignment="Top" Background="#FFD49393"/>
                         </Grid>
-                        <Grid Height="80" Width="600" Background="Beige"/>
+                        <Grid Height="80" Width="600" Background="Beige">
+                            <Button Content="乾元丹数量" HorizontalAlignment="Left" Margin="40,45,0,0" VerticalAlignment="Top" Background="#FFD49393"/>
+                            <Button Content="门派转换" HorizontalAlignment="Left" Margin="181,45,0,0" VerticalAlignment="Top" Background="#FFD49393"/>
+                            <Button Content="阵法介绍" HorizontalAlignment="Left" Margin="280,45,0,0" VerticalAlignment="Top" Background="#FFD49393"/>
+                            <Button Content="潜能果" HorizontalAlignment="Left" Margin="380,45,0,0" VerticalAlignment="Top" Background="#FFD49393"/>
+                        </Grid>
                     </StackPanel>
                     <StackPanel Grid.Column="1" Background="Yellow"></StackPanel>
                 </Grid>

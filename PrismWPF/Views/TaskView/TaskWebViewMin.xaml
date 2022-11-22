@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="PrismWPF.Views.TaskWebViewMin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PrismWPF.Views"
+             xmlns:prism="http://prismlibrary.com/"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <WebBrowser Source="https://xyq.163.com/" Width="400" Height="400" Margin="10,0,390,50"></WebBrowser>
+        <Frame Source="https://xyq.163.com/" Width="300" Height="300" Margin="400,0,0,50"></Frame>
+        <Button Content="TaskWebViewA" Height="24" Margin="567,416,10,10" />
+    </Grid>
+</UserControl>

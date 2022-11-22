@@ -60,7 +60,22 @@
                 Command="{Binding OpenCommand}" CommandParameter="SkillView"
                 Style="{StaticResource MyTabRadioButton}" />
             <RadioButton
-                Content="任务"
+                Content="攻略"
+                IsChecked="False"
+                Command="{Binding OpenCommand}" CommandParameter="TaskView"
+                Style="{StaticResource MyTabRadioButton }" />
+            <RadioButton
+                Content="召唤兽"
+                IsChecked="False"
+                Command="{Binding OpenCommand}" CommandParameter="TaskView"
+                Style="{StaticResource MyTabRadioButton }" />
+            <RadioButton
+                Content="大区物价"
+                IsChecked="False"
+                Command="{Binding OpenCommand}" CommandParameter="TaskView"
+                Style="{StaticResource MyTabRadioButton }" />
+            <RadioButton
+                Content="更新公告"
                 IsChecked="False"
                 Command="{Binding OpenCommand}" CommandParameter="TaskView"
                 Style="{StaticResource MyTabRadioButton }" />

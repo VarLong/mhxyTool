@@ -1,6 +1,8 @@
 ﻿using Prism.DryIoc;
 using Prism.Ioc;
 using Prism.Modularity;
+using Prism.Mvvm;
+using PrismWPF.ViewModels;
 using PrismWPF.Views;
 using System;
 using System.Collections.Generic;
@@ -30,6 +32,10 @@ namespace PrismWPF
             containerRegistry.RegisterForNavigation<RoleView>();
             containerRegistry.RegisterForNavigation<SkillView>();
             containerRegistry.RegisterForNavigation<TaskView>();
+            containerRegistry.RegisterForNavigation<TaskViewContent>();
+            containerRegistry.RegisterForNavigation<TaskViewContentTypeA>();
+            containerRegistry.RegisterForNavigation<TaskWebViewMin>();
+            containerRegistry.RegisterForNavigation<TaskWebViewMinA>();
         }
 
 

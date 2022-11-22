@@ -1,9 +1,4 @@
-﻿using DryIoc;
-using Prism.Commands;
-using Prism.Mvvm;
-using Prism.Regions;
-using PrismWPF.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,15 +16,13 @@ using System.Windows.Shapes;
 namespace PrismWPF.Views
 {
     /// <summary>
-    /// ViewC.xaml 的交互逻辑
+    /// TaskWebViewMinA.xaml 的交互逻辑
     /// </summary>
-    public partial class TaskView : UserControl
+    public partial class TaskWebViewMinA : UserControl
     {
-        public TaskView()
+        public TaskWebViewMinA()
         {
             InitializeComponent();
-
         }
-
     }
 }
